@@ -1,0 +1,11 @@
+<table class="table table-sm">
+  <tr *ngFor="let element of lista">
+    <td>{{element.descripcion}}</td>
+    <td>{{element.precio}}</td>
+    <td>{{element.cantidad}}</td>
+    <td>{{element.cateogoriaId}}</td>
+    <td> <button type="button" class="btn btn-outline-warning" (click)="edit(element)">Editar</button> </td>
+    <td> <button type="button" class="btn btn-outline-danger" (click)="delete(element.id)">Eliminar</button> </td>
+  </tr>
+
+</table>
